@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escape del Laboratorio</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #05080f;
+      overflow: hidden;
+      font-family: 'Courier New', monospace;
+    }
+    #game {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    canvas { image-rendering: pixelated; }
+  </style>
+</head>
+<body>
+  <div id="game"></div>
+
+  <!-- Phaser 3 (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+
+  <!-- Modulos del juego -->
+  <script src="js/util.js"></script>
+  <script src="js/AudioManager.js"></script>
+  <script src="js/UIManager.js"></script>
+  <script src="js/Player.js"></script>
+  <script src="js/Enemy.js"></script>
+  <script src="js/MenuScene.js"></script>
+  <script src="js/GameScene.js"></script>
+  <script src="js/WinScene.js"></script>
+  <script src="js/LoseScene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
